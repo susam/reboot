@@ -1,0 +1,8 @@
+A
+JMP FFFF:0000
+
+N REBOOT.COM
+R CX
+5
+W
+Q
