@@ -82,7 +82,7 @@ How Does It Work?
 When the computer boots, the x86 microprocessor starts in real mode
 and executes the instruction at FFFF:0000. This is an address in the
 BIOS ROM that contains a far jump instruction to go to another
-address, typically FFFF:E05B.
+address, typically F000:E05B.
 
 ```
 C:\>DEBUG
@@ -90,7 +90,7 @@ C:\>DEBUG
 FFFF:0000 EA5BE000F0    JMP     F000:E05B
 ```
 
-The address FFFF:E05B contains the BIOS start-up program which
+The address F000:E05B contains the BIOS start-up program which
 performs a power-on self-test (POST), initializes the peripheral
 devices, loads the boot sector code, and executes it. These operations
 complete the booting sequence.
