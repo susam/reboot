@@ -46,7 +46,7 @@ The binary executable file can be created on a Unix or Linux system
 using the `printf` command as follows:
 
 ```
-printf "\xEA\x00\x00\xFF\xFF" > REBOOT.COM
+echo EA 00 00 FF FF | xxd -r -p > REBOOT.COM
 ```
 
 
